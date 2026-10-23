@@ -1,0 +1,34 @@
+{
+  "name": "template-config",
+  "version": "1.0.0",
+  "description": "Template repository for configuration",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack serve --config webpack.dev.js",
+    "create-page": "git branch gh-pages",
+    "sync": "git checkout gh-pages && git merge main --no-edit",
+    "build": "webpack --config webpack.prod.js",
+    "deploy-commit": "git add dist -f && git commit -m 'Deployment commit'",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpMarc4/template-config.git"
+  },
+  "author": "M. San",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SpMarc4/template-config/issues"
+  },
+  "homepage": "https://github.com/SpMarc4/template-config#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.4",
+    "html-webpack-plugin": "^5.6.7",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.108.4",
+    "webpack-cli": "^7.2.1",
+    "webpack-dev-server": "^6.0.0",
+    "webpack-merge": "^6.0.1"
+  }
+}
