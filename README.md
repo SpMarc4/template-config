@@ -1,2 +1,3 @@
 # Template Config
-Template repository for project configuration. 
+
+Template repository for project configuration.
